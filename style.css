@@ -1,0 +1,345 @@
+/*--------GLOBAL--------*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+:root{
+    --main-black:#1E202B;
+    --main-blue:#1D33F9;
+    --main-purple:#882AC6;
+    --main-gradient: linear-gradient(to left, var(--main-blue),var(--main-purple))
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    width: 100%;
+    background-color: white;
+}
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+p, li{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-black)
+}
+.btnWhite{
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+    background: #1d33f9; /* Old Browsers */
+    background: -webkit-linear-gradient(top left,#1d33f9,#882ac6); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top left,#1d33f9,#882ac6); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top left,#1d33f9,#882ac6); /*Fx 3.6-15*/
+    background: linear-gradient(top left, #1d33f9, #882ac6); /*Standard*/
+    /* text gradient */
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnGroup{
+    position: relative;
+    z-index: 1;
+}
+.whiteBG{
+    background-color: white;
+    display: block;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    border-radius: 3px;
+}
+.btnColor{
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-image: var(--main-gradient);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.btnPurple{
+    color:var(--main-purple);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: var(--main-purple);
+}
+
+
+/*--------Header/Nav--------*/
+nav{
+    display: inline-block;
+    width: 100%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+.logo{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+header h1{
+    color: white;
+    width: 55%;
+    margin: 90px 0 40px 0;
+}
+header p{
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+header{
+    background-image: url("images/landing.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* height: 100%; */
+    min-height: 900px;
+    width: 90%;
+    padding: 0 5%;
+    position: relative;
+}
+.ipad{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+.iphone{
+    width: 40%;
+    position: absolute;
+    right: 4%;
+    top: 150px;
+    display: none;
+}
+.mobile{
+    display: none;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+#toggle{
+    display: none;
+}
+.mobile ul{
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background-color: rgb(255, 355, 255, 0.1)
+}
+.mobile ul li{
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#toggle:checked ~ ul{
+    display: block;
+}
+
+/*--------new 4k movies--------*/
+.new4kMovies{
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 160px;
+}
+.sectionTitle h2, .sectionTitle a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sectionTitle a{
+    margin-left: 20px;
+}
+.sectionTitle{
+    margin: 50px 0 20px 0;
+}
+.new4kMovies ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.new4kMovies ul li img{
+    width: 92%;
+    margin: 4%;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+}
+
+
+/*--------Call to action--------*/
+.CTA{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 200px auto;
+}
+.CTA h1{
+    margin-bottom: 40px;
+}
+
+
+/*--------Call to action--------*/
+footer a{
+    text-decoration: none;
+    color: var(--main-black);
+}
+footer ul{
+    list-style: none;
+    float: right;
+}
+footer ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+.copy a, .copy p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.copy p{
+    margin-left: 20px;
+}
+footer{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+footer ul,footer copy{
+    margin-bottom: 3%;
+    display: inline-block;
+}
+
+
+/*--------RESPONSIVE--------*/
+@media only screen and (max-width: 1200px){
+    header{
+        height: 100%;
+        min-height: 1000px;
+        background-position: left center;        
+    }
+    header h1{
+        margin: 50px 0 40px 0;
+    }
+    .btnWhite{
+        margin-bottom: 80px;
+    }
+    .CTA{
+        width: 90%;
+    }
+    .ipad{
+        display: none;
+    }
+    .iphone{
+        display: block;
+        /* right: 10%; */
+        top: 25%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    header h1{
+        width: 100%;
+    }
+    header{
+        background-position: left center;
+    }
+    .iphone{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row; 
+    }
+    footer ul li{
+        margin-left: 0px;
+        margin: 0 25px;
+    }
+    .copy{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .copy p{
+        margin-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    header h1{
+        width: 100%;
+    }
+    .new4kMovies ul{
+        flex-direction: column;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    footer ul li{
+        display: none;
+    }
+    h1{
+        font-size: 36px;
+    }
+}
