@@ -260,9 +260,6 @@ footer ul,footer copy{
 
 /*--------RESPONSIVE--------*/
 @media only screen and (min-width: 1921px){
-    body{
-        background-color: crimson;
-    }
     header{
         background-position: bottom;
     }
