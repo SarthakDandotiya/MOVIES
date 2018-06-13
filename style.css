@@ -142,7 +142,7 @@ header{
 .ipad{
     width: 60%;
     position: absolute;
-    right: 0;
+    right: 3%;
     bottom: 60px;
 }
 .iphone{
@@ -259,14 +259,62 @@ footer ul,footer copy{
 
 
 /*--------RESPONSIVE--------*/
+@media only screen and (min-width: 1921px){
+    body{
+        background-color: crimson;
+    }
+    header{
+        background-position: bottom;
+    }
+    header h1{
+        width: 40%;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .pFix{
+        margin-bottom: 1%;
+    }
+    .ipad{
+        width: 53%;
+        top: 6%;
+        right: 8%;
+        /* bottom: 6%; */
+        bottom: 0;
+    }
+    .new4kMovies ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .new4kMovies ul li{
+        width: 92%;
+    }
+    .desktop li{
+        font-size: 22px;
+    }
+    .logo{
+        font-size: 28px;
+    }
+}
+
 @media only screen and (max-width: 1200px){
     header{
         height: 100%;
         min-height: 1000px;
-        background-position: left center;        
+        background-position: left bottom;        
     }
     header h1{
         margin: 50px 0 40px 0;
+    }
+    h1{
+        font-size: 46;
     }
     .btnWhite{
         margin-bottom: 80px;
@@ -279,7 +327,6 @@ footer ul,footer copy{
     }
     .iphone{
         display: block;
-        /* right: 10%; */
         top: 25%;
     }
 }
@@ -302,7 +349,6 @@ footer ul,footer copy{
     }
     footer ul{
         display: flex;
-        flex-direction: row; 
     }
     footer ul li{
         margin-left: 0px;
