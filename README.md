@@ -1,1 +1,3 @@
-# MOVIES_PracticeProject
+# MOVIES
+
+Landing page for a Movie Streaming service
